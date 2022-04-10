@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins&family=Seaweed+Script&display=swap);
+
+html{
+    scroll-behavior: smooth;
+}
+
+.bg-image{
+    overflow: hidden;
+}
+
+.bg-image img{
+    transition: all 1.5s ease;
+}
+
+.bg-image:hover img{
+    transform: scale(1.5);
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+.carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
